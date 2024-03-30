@@ -22,8 +22,15 @@ const Header = () => {
                 <img src="assets/images/carservice-logo1.png" alt="app logo" width="150" height="34" style={{ height: "45px" }}/>
               </Link>
              </li>          
-             <li className="left-side"><Link to="/book-slot">Book a Slot</Link></li>
-            <li className="left-side"><Link to="/call-us">Call us</Link></li>
+             <li className="left-side"><Link to="/">Book a Slot</Link></li>
+            <li className="left-side"><Link to="/">Call us</Link></li>
+            <li className="right-side">
+            <div style={{ display: 'flex'}} >
+              <Link to="/"   className="btn btn-primary active" style={{ display: 'flex', justifyContent: 'flex-end',position:"relative",gap:"5px"}}>
+                <i className="fa fa-download" style={{marginTop:"5px"}}></i> Download Mobile App
+              </Link>
+            </div>
+            </li>
             <li><Link to="#" className="open-login"><i className="icon icon-user"></i></Link></li>
             <li><Link to="#" className="open-search"><i className="icon icon-magnifier"></i></Link></li>
             <li><Link to="#" className="open-cart"><i className="icon icon-cart"></i> <span>4</span></Link></li>
@@ -48,6 +55,7 @@ const Header = () => {
                      <li>
                      <Link to="/">Home <span className="open-dropdown"><i></i></span></Link>
                      </li>
+                     
                     <li>
                     <Link to="/">Services <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></Link>
                         <div class="navbar-dropdown">
@@ -151,7 +159,7 @@ const Header = () => {
                       <div className="box clearfix">
                         <ul>
                           <li className="label">Our Story</li>
-                          <li><Link to="/">Leadership</Link></li>
+                          <li><Link to="/aboutus">Leadership</Link></li>
                           <li><Link to="/">Partners</Link></li>
                           <li><Link to="/">Careers</Link></li>
                           <li><Link to="/">Contact Us</Link></li>
@@ -168,7 +176,7 @@ const Header = () => {
                     <div className="box-full">
                       <div className="box clearfix">
                         <ul>
-                          <li className="label"><Link to="#">Register Garage</Link></li>
+                          <li className="label"><Link to="/gagare-register">Register Garage</Link></li>
                           {/* <li><Link to="/category"></Link></li> */}
                         </ul>
                       </div>
@@ -176,6 +184,23 @@ const Header = () => {
                   </div>
                 </div>
               </li>
+              <li>
+                     <Link to="/">My Profile <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></Link>
+                     <div className="navbar-dropdown navbar-dropdown-single">
+                  <div className="navbar-box">
+                    <div className="box-full">
+                      <div className="box clearfix">
+                        <ul>
+                          <li><Link to="/mybookings">My bookings</Link></li>
+                          <li><Link to="/myaccount">My account</Link></li>
+                          <li><Link to="/mycars">My cars</Link></li>
+                          <li><Link to="/signin">Logout</Link></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                     </li>
               {/* <li>
                 <Link to="#">Blog <span className="open-dropdown"><i className="fa fa-angle-down"></i></span></Link>
                 <div className="navbar-dropdown navbar-dropdown-single">
@@ -292,7 +317,7 @@ const Header = () => {
                                         <div class="h4">Premium quality</div>
                                         <div class="clearfix">
                                             <p>Homes that differ in terms of style, concept and architectural solutions have been furnished by Furniture Factory. These spaces tell of an international lifestyle that expresses modernity, research and a creative spirit.</p>
-                                            <a class="btn btn-clean btn-big" href="products-grid.html">Shop now</a>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -301,11 +326,7 @@ const Header = () => {
                         </div>
                     </li> */}
                   <li>
-            <div style={{ display: 'flex'}} >
-              <Link to="/"   className="btn btn-primary active" style={{ display: 'flex', justifyContent: 'flex-end',position:"relative", left:" 90%" }}>
-                <i className="fa fa-download"></i> Download Mobile App
-              </Link>
-            </div>
+           
           </li>
 
                     {/* <li class="nav-settings">
@@ -357,7 +378,7 @@ const Header = () => {
         <div class="login-wrapper">
             <div class="h5">Sign in</div>
             <form>
-                <div class="form-group">
+                {/* <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"></input>
                 </div>
                 <div class="form-group">
@@ -366,8 +387,9 @@ const Header = () => {
                 <div class="form-group">
                     <a href="#forgotpassword" class="open-popup btn btn-main btn-sm">Forgot password?</a>
                     <a href="#createaccount" class="open-popup btn btn-main btn-sm">Don't have an account?</a>
-                </div>
-                <button type="submit" class="btn btn-block btn-outline-primary">Submit</button>
+                </div> */}
+                <button type="submit" class="btn btn-block btn-outline-primary"><Link to="/signin"> Sign is as Customer </Link> </button>
+                <button type="submit" class="btn btn-block btn-outline-primary"><Link to="/garagehome"> Sign is as Business </Link> </button>
             </form>
         </div>
 
@@ -386,15 +408,13 @@ const Header = () => {
                                 <a href="product.html"><img src="assets/images/item-1.jpg" alt="" /></a>
                             </div>
                             <div class="title">
-                                <div><a href="product.html">Product item</a></div>
-                                <small>Product category</small>
+                                <div><a href="product.html">MOT</a></div>
+                                <small>yearly pack</small>
                             </div>
-                            <div class="quantity">
-                                <input type="number" value="2" class="form-control form-quantity" />
-                            </div>
-                            <div class="price">
-                                <span class="final">$ 1.998</span>
-                                <span class="discount">$ 2.666</span>
+                           
+                            <div class="price"  style={{width:"100%"}}>
+                                <span class="final"> £  199.99</span>
+                                <span class="discount">£ 222.6</span>
                             </div>
                             {/* <!--delete-this-item--> */}
                             <span class="icon icon-cross icon-delete"></span>
@@ -404,18 +424,16 @@ const Header = () => {
 
                         <div class="cart-block cart-block-item clearfix">
                             <div class="image">
-                                <a href="product.html"><img src="assets/images/item-2.jpg" alt="" /></a>
+                                <a href="product.html"><img src="assets/images/spareparts_3.jpg" alt="" /></a>
                             </div>
                             <div class="title">
-                                <div><a href="product.html">Product item</a></div>
-                                <small>Product category</small>
+                                <div><a href="product.html">Brake discs replacement</a></div>
+                                <small>Replacement</small>
                             </div>
-                            <div class="quantity">
-                                <input type="number" value="2" class="form-control form-quantity" />
-                            </div>
-                            <div class="price">
-                                <span class="final">$ 1.998</span>
-                                <span class="discount">$ 2.666</span>
+                           
+                            <div class="price" style={{width:"100%"}}>
+                                <span class="final">£ 11.99</span>
+                                <span class="discount">£ 18.66</span>
                             </div>
                             {/* <!--delete-this-item--> */}
                             <span class="icon icon-cross icon-delete"></span>
@@ -423,22 +441,20 @@ const Header = () => {
 
                         {/* <!--cart item--> */}
 
-                        <div class="cart-block cart-block-item clearfix">
+                        <div class="cart-block " style={{width:'100%'}}>
                             <div class="image">
-                                <a href="product.html"><img src="assets/images/item-3.jpg" alt="" /></a>
+                                <a href="product.html"><img src="assets/images/spareparts_2.jpg" alt="" /></a>
                             </div>
                             <div class="title">
-                                <div><a href="product.html">Product item</a></div>
-                                <small>Product category</small>
+                                <div><a href="product.html">Clutch kit replacement</a></div>
+                                <small>Replacement</small>
                             </div>
-                            <div class="quantity">
-                                <input type="number" value="2" class="form-control form-quantity" />
+                           
+                            <div class="price" style={{width:"100%"}}>
+                                <span class="final">£ 55.99</span>
+                                <span class="discount">£ 62.66</span>
                             </div>
-                            <div class="price">
-                                <span class="final">$ 1.998</span>
-                                <span class="discount">$ 2.666</span>
-                            </div>
-                            {/* <!--delete-this-item--> */}
+                            
                             <span class="icon icon-cross icon-delete"></span>
                         </div>
 
@@ -454,16 +470,7 @@ const Header = () => {
                                 <strong>Discount 15%</strong>
                             </div>
                             <div>
-                                <span>$ 159,00</span>
-                            </div>
-                        </div>
-
-                        <div class="cart-block cart-block-footer clearfix">
-                            <div>
-                                <strong>Shipping</strong>
-                            </div>
-                            <div>
-                                <span>$ 30,00</span>
+                                <span>£ 159,00</span>
                             </div>
                         </div>
 
@@ -472,7 +479,7 @@ const Header = () => {
                                 <strong>VAT</strong>
                             </div>
                             <div>
-                                <span>$ 59,00</span>
+                                <span>£ 59.00</span>
                             </div>
                         </div>
                     </div>
@@ -487,7 +494,7 @@ const Header = () => {
                                 <strong>Total</strong>
                             </div>
                             <div>
-                                <div class="h4 title">$ 1259,00</div>
+                                <div class="h4 title">£ 167.97</div>
                             </div>
                         </div>
                     </div>
@@ -498,10 +505,10 @@ const Header = () => {
                     <div class="cart-block-buttons clearfix">
                         <div class="row">
                             <div class="col-sm-6">
-                                <a href="products-grid.html" class="btn btn-outline-info">Continue shopping</a>
+                                <Link to="/"  class="btn btn-outline-info">Continue shopping</Link>
                             </div>
                             <div class="col-sm-6 text-right">
-                                <a href="checkout-1.html" class="btn btn-outline-warning"><span class="icon icon-cart"></span> Checkout</a>
+                                <Link to="/" class="btn btn-outline-warning"><span class="icon icon-cart"></span> Checkout</Link>
                             </div>
                         </div>
                     </div>

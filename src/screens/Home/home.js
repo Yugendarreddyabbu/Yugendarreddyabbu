@@ -8,6 +8,7 @@ import BookSlot from "../../components/bookslot/bookslot";
 import SignUp from "../signup/signup";
 import Blogs from "../../components/blogs/blogs";
 import PopUp from "../../components/bookaslotpopup/popup";
+import SpareParts from "../../components/partsweuse/Partsused";
 
 const HomeScreen = () => {
   
@@ -15,12 +16,12 @@ return(
 <div>
 <Header/>
      <HomeSlider/>
-      <BookSlot/>
-      {/* <PopUp/> */}
+      <PopUp/>
      <GarageList/>
      <OurStats/> 
-     {/* <SignUp/> */}
+     <SpareParts/>
      <Blogs/>
+     <BookSlot/>
      <Footer/>
     
 </div>

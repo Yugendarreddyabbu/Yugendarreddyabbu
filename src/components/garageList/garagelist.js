@@ -1,6 +1,8 @@
 import React from "react";
+import {useNavigate } from "react-router-dom";
 
 const GarageList = () => {
+    const naviagate = useNavigate();
     const renderStars = (rating) => {
         const fullStars = Math.floor(rating);
         const halfStars = Math.ceil(rating - fullStars);
@@ -22,7 +24,10 @@ const GarageList = () => {
         
         return stars;
     };
-
+ 
+    const handleNavigate = () => {
+        naviagate("/checkout-service")
+    }
 
  return(
     <section class="blog blog-block">
@@ -50,7 +55,7 @@ const GarageList = () => {
 
             <div class="col-md-4">
                 <article data-3d>
-                    <a href="products-grid.html">
+                    <a>
                         <div class="image">
                             <img src="assets/images/garage_1.jpg" alt="" />
                         </div>
@@ -69,7 +74,7 @@ const GarageList = () => {
                                         </div>
                         </div>
                         <div class="show-more">
-                            <span class="btn btn-clean">Book a Slot</span>
+                            <span class="btn btn-clean" onClick={handleNavigate}>Book a Slot</span>
                         </div>
                     </a>
                 </article>
@@ -79,7 +84,7 @@ const GarageList = () => {
 
             <div class="col-md-4">
                 <article data-3d>
-                    <a href="products-grid.html">
+                    <a>
                         <div class="image">
                             <img src="assets/images/garage_2.jpg" alt="" />
                         </div>
@@ -97,7 +102,7 @@ const GarageList = () => {
                                         </div>
                                         </div>
                         <div class="show-more">
-                            <span class="btn btn-clean">Book a Slot</span>
+                            <span class="btn btn-clean" onClick={handleNavigate}>Book a Slot</span>
                         </div>
                     </a>
                 </article>
@@ -107,7 +112,7 @@ const GarageList = () => {
 
             <div class="col-md-4">
                 <article data-3d>
-                    <a href="products-grid.html">
+                    <a>
                         <div class="image">
                             <img src="assets/images/garage_3.jpg" alt="" />
                         </div>
@@ -125,7 +130,7 @@ const GarageList = () => {
                                         </div>
                                        </div>
                         <div class="show-more">
-                            <span class="btn btn-clean">Book a Slot</span>
+                            <span  class="btn btn-clean" onClick={handleNavigate}>Book a Slot</span>
                         </div>
                     </a>
                 </article>

@@ -6,13 +6,19 @@ import "./popup.css";
 const PopUp = () => {
     const [postcode, setPostcode] = useState('');
     const [registrationNumber, setRegistrationNumber] = useState('');
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleClose = () => {
-        console.log('Closing the popup');
+        setIsOpen(false);
     };
+
     const bookSlot = () => {
         handleClose();
     };
+
+    if (!isOpen) {
+        return null; 
+    }
 
     return (
         <div className="popup-container">

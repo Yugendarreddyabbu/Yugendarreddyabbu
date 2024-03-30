@@ -28,7 +28,7 @@ const HomeSlider = () => {
       <OwlCarousel className="owl-slider owl-carousel owl-theme" {...options}>
           <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_1.png)"}}>
             <div className="container">
-              <div className="caption">
+              <div className="caption" style={{ color: "yellow" }}>
                 <div className="animated" data-start="fadeInUp">
                   <div className="promo pt-3">
                     <div className="title title-sm p-0">Engine Service</div>
@@ -47,7 +47,7 @@ const HomeSlider = () => {
                 </div>
                 <div className="animated" data-start="fadeInUp">
                   <div className="promo pt-5">
-                    <div className="h6 p-0 m-0">Get special price</div>
+                    <div className="h6 p-0 m-0 red">Get special price</div>
                     <div className="price">
                       <span>£149,99</span>
                       <span>349,99</span>
@@ -60,7 +60,7 @@ const HomeSlider = () => {
           </div>
           <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_2.JPG)"}}>
             <div className="container">
-              <div className="caption">
+              <div className="caption" style={{ color: "yellow" }}>
                 <div className="animated" data-start="fadeInUp">
                   <div className="big-text big-text-sm">
                     <span>Save now </span>
@@ -89,9 +89,9 @@ const HomeSlider = () => {
               </div>
             </div>
           </div>
-          <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_3.jpg)"}}>
+          <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_3.jpg)", color: "yellow" }}>
             <div className="container">
-              <div className="caption">
+              <div className="caption" style={{ color: "yellow" }}>
                 <div className="promo text-center">
                   <div className="animated" data-start="fadeInUp">
                     <div className="title title-sm p-0">MAINTENANCE & REPAIR</div>

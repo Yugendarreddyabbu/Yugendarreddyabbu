@@ -23,7 +23,7 @@ const BookSlot = () => {
                 <div>
                     <h6>Get the best price in your area for your vehicle.</h6>
                 </div>
-                <div className="form-group">
+                {/* <div className="form-group">
                     <TextField
                         id="postcode"
                         label="Postcode"
@@ -40,7 +40,7 @@ const BookSlot = () => {
                         // value={registrationNumber}
                         // onChange={(e) => setRegistrationNumber(e.target.value)}
                     />
-                </div>
+                </div> */}
                 <div className='popup-buttons'>
                     <Button variant="contained" 
                     style={{    padding: "10px 20px",
@@ -48,7 +48,9 @@ const BookSlot = () => {
                                 borderRadius: "4px",
                                 cursor:"pointer",
                                 backgroundColor:" #3d4976",
+                            
                             }} 
+                            // onClick={handleOpenPopUp}
                     // onClick={bookSlot}
                     >
                         Get a Quote
