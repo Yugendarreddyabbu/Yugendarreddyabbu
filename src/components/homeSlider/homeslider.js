@@ -28,7 +28,7 @@ const HomeSlider = () => {
       <OwlCarousel className="owl-slider owl-carousel owl-theme" {...options}>
           <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_1.png)"}}>
             <div className="container">
-              <div className="caption" style={{ color: "yellow" }}>
+              <div className="caption">
                 <div className="animated" data-start="fadeInUp">
                   <div className="promo pt-3">
                     <div className="title title-sm p-0">Engine Service</div>
@@ -60,7 +60,7 @@ const HomeSlider = () => {
           </div>
           <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_2.JPG)"}}>
             <div className="container">
-              <div className="caption" style={{ color: "yellow" }}>
+              <div className="caption" >
                 <div className="animated" data-start="fadeInUp">
                   <div className="big-text big-text-sm">
                     <span>Save now </span>
@@ -89,9 +89,9 @@ const HomeSlider = () => {
               </div>
             </div>
           </div>
-          <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_3.jpg)", color: "yellow" }}>
+          <div className="item d-flex align-items-center" style={{backgroundImage: "url(assets/images/homeslide_3.jpg)"}}>
             <div className="container">
-              <div className="caption" style={{ color: "yellow" }}>
+              <div className="caption" >
                 <div className="promo text-center">
                   <div className="animated" data-start="fadeInUp">
                     <div className="title title-sm p-0">MAINTENANCE & REPAIR</div>

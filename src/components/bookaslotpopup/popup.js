@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button } from '@mui/material';
 import "./popup.css";
+import { Link } from 'react-router-dom';
 
 
 const PopUp = () => {
@@ -54,7 +55,7 @@ const PopUp = () => {
                     />
                 </div>
                 <div className='popup-buttons'>
-                    <Button variant="contained" 
+                  <Link to="checkout-service"> <Button variant="contained" 
                     style={{    padding: "10px 20px",
                                 border:" none",
                                 borderRadius: "4px",
@@ -63,7 +64,7 @@ const PopUp = () => {
                             }} 
                     onClick={bookSlot}>
                         Get a Quote
-                    </Button>
+                    </Button></Link>
                 </div>
         </div>
         </div>

@@ -44,9 +44,9 @@ const MyCars = () => {
                     maxWidth: '400px',
                     margin: 'auto'
                 }}>
-                    <img src="https://mahindragoodwood.co.za/wp-content/uploads/2018/11/thar-logo.png" style={{ width: "300px" }} />
+                    <img src="https://i.pinimg.com/originals/27/2f/cd/272fcd3d1ac73529e35c8d9d420005fc.png" style={{ width: "200px" }} />
 
-                    <h2>MAHINDRA THAR</h2>
+                    <h2>Land Rover</h2>
                     <p>Unknown mileage</p>
 
                     <div className="col-md-12">
