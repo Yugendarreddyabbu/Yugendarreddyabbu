@@ -43,6 +43,7 @@ const PopUp = () => {
                         variant="outlined"
                         value={postcode}
                         onChange={(e) => setPostcode(e.target.value)}
+                        required 
                     />
                 </div>
                 <div className="form-group">
@@ -52,6 +53,7 @@ const PopUp = () => {
                         variant="outlined"
                         value={registrationNumber}
                         onChange={(e) => setRegistrationNumber(e.target.value)}
+                        required 
                     />
                 </div>
                 <div className='popup-buttons'>

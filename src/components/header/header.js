@@ -65,14 +65,15 @@ const Header = () => {
                                         <div class="row">
                                         <div class="col-lg-3">
                                                 <ul>
-                                                <Link to="/"class="label">Oem Service. After Market</Link>
-                                                  <li> <Link to="/">A</Link></li>
+                                                    <li class="label">MOTs</li>
+                                                    <li> <Link to="/">A</Link></li>
                                                   <li> <Link to="/">B</Link></li>
                                                   <li><Link to="/">C</Link></li>
                                                   <li><Link to="/">D</Link></li>
-                                                  <li class="more"><Link to="/"><i class="icon icon-chevron-right"></i> More</Link></li>
+                                                    <li class="more"><Link to="/"><i class="icon icon-chevron-right"></i> More</Link></li>
                                                 </ul>
                                             </div>
+                                       
                                             <div class="col-lg-3">
                                                 <ul>
                                                 <Link to="/"class="label">Maintenance & Repair</Link>
@@ -131,20 +132,18 @@ const Header = () => {
                                                   <li><Link to="/">C</Link></li>
                                                   <li><Link to="/">D</Link></li>
                                                     <li class="more"><Link to="/"><i class="icon icon-chevron-right"></i> More</Link></li>
-                                                    <li class="more"><a href="#"><i class="icon icon-chevron-right"></i> More</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-lg-3">
                                                 <ul>
-                                                    <li class="label">MOTs</li>
-                                                    <li> <Link to="/">A</Link></li>
+                                                <Link to="/"class="label">Oem Service. After Market</Link>
+                                                  <li> <Link to="/">A</Link></li>
                                                   <li> <Link to="/">B</Link></li>
                                                   <li><Link to="/">C</Link></li>
                                                   <li><Link to="/">D</Link></li>
-                                                    <li class="more"><Link to="/"><i class="icon icon-chevron-right"></i> More</Link></li>
+                                                  <li class="more"><Link to="/"><i class="icon icon-chevron-right"></i> More</Link></li>
                                                 </ul>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                 </div>
@@ -191,7 +190,7 @@ const Header = () => {
                     <div className="box-full">
                       <div className="box clearfix">
                         <ul>
-                          <li><Link to="/mybookings">My bookings</Link></li>
+                          <li><Link to="/mybookings">Booking History</Link></li>
                           <li><Link to="/myaccount">My account</Link></li>
                           <li><Link to="/mycars">My cars</Link></li>
                           <li><Link to="/signin">Logout</Link></li>
@@ -508,7 +507,7 @@ const Header = () => {
                                 <Link to="/"  class="btn btn-outline-info">Continue shopping</Link>
                             </div>
                             <div class="col-sm-6 text-right">
-                                <Link to="/" class="btn btn-outline-warning"><span class="icon icon-cart"></span> Checkout</Link>
+                                <Link to="/checkout-service" class="btn btn-outline-warning"><span class="icon icon-cart"></span> Checkout</Link>
                             </div>
                         </div>
                     </div>

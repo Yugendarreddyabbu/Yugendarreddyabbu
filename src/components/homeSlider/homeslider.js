@@ -65,7 +65,7 @@ const HomeSlider = () => {
                   <div className="big-text big-text-sm">
                     <span>Save now </span>
                     <span>50%</span>
-                    <span>on General Service</span>
+                    <span>Premium MOt</span>
                     <div>
                       <a href="#" target="_blank" className="btn btn-info btn-block">Book now</a>
                     </div>

@@ -98,7 +98,7 @@ const TermsAndConditions = () => {
                     <div className="container">
                         <h2 className="h5 title">SUPPORTS</h2>
                         <div className="text">
-                            <p>The Company offers an email as well as phone call based support system along with an online knowledge pool of FAQs. In case you require any assistance or support, you may access support resources or contact our support by emailing at info@pitstop.in or calling our helpline at +91-8398970970 (Monday to Sunday between 7 am and 9 pm).
+                            <p>The Company offers an email as well as phone call based support system along with an online knowledge pool of FAQs. In case you require any assistance or support, you may access support resources or contact our support by emailing at info@pitstop.in or calling our helpline at +4-8398970970 (Monday to Sunday between 7 am and 9 pm).
 
                                 The Company shall revert to every complaint at the earliest upon receipt of the complaint during the business days. Further, the Company shall take the best possible efforts to redress the complaint within 7 days of receipt of the complaint. Any suggestions by the Company regarding the use of the Services shall not be construed as a warranty.
 

@@ -5,7 +5,7 @@ import Header from '../../components/header/header';
 import { Link, useNavigate } from 'react-router-dom';
 
 const MyCars = () => {
-    const naviagte = useNavigate();
+    const navigate = useNavigate();
     const [open, setOpen] = useState(false);
     const [company, setCompany] = useState('');
     const [model, setModel] = useState('');
@@ -25,38 +25,46 @@ const MyCars = () => {
         handleClose(); // Close modal after form submission
     };
 
-    const handleNaviagte = () => {
-        naviagte("/mybookings")
-    }
- 
+    const handleNavigate = () => {
+        navigate("/mybookings");
+    };
+
+    const handleSeeQuotes = () => {
+        navigate("/checkout-service");
+    };
+
     return (
         <div>
             <Header />
             <div style={{ backgroundColor: 'rgb(57 58 52)', padding: '20px' }}>
                 <h1>My Cars</h1>
 
+            <Link to="/mybookings">
                 <div 
-                onClick={handleNaviagte}
-                style={{
+                    style={{
                     backgroundColor: 'white',
                     borderRadius: '10px',
                     padding: '20px',
                     maxWidth: '400px',
                     margin: 'auto'
-                }}>
-                    <img src="https://i.pinimg.com/originals/27/2f/cd/272fcd3d1ac73529e35c8d9d420005fc.png" style={{ width: "200px" }} />
+                        }}>
+                    <img src="https://i.pinimg.com/originals/27/2f/cd/272fcd3d1ac73529e35c8d9d420005fc.png" style={{ width: "250px" }} />
 
                     <h2>Land Rover</h2>
                     <p>Unknown mileage</p>
 
+                        <Link to="/checkout-service">
                     <div className="col-md-12">
-                        <Link to="/mycars" className="btn btn-outline-dark">
+                        <div className="btn btn-outline-dark">
                             See my quotes
-                        </Link>
+                        </div>
                     </div>
+                    </Link>
                 </div>
+                </Link>
+                <Link to="/mybookings">
                 <div
-                onClick={handleNaviagte}
+                
                  style={{
                     backgroundColor: 'white',
                     borderRadius: '10px',
@@ -70,12 +78,15 @@ const MyCars = () => {
                     <h2>BMW I7 Ev</h2>
                     <p>Unknown mileage</p>
 
+                    <Link to="/checkout-service">
                     <div className="col-md-12">
-                        <Link to="/mycars" className="btn btn-outline-dark">
+                        <div className="btn btn-outline-dark">
                             See my quotes
-                        </Link>
+                        </div>
                     </div>
+                    </Link>
                 </div>
+                </Link>
 
                 <Button  className="btn btn-outline-dark" style={{color:"antiquewhite", marginTop: '20px', padding: '10px', borderRadius: '5px' }} onClick={handleOpen}>Add Car</Button>
                 <Modal open={open} onClose={handleClose}>

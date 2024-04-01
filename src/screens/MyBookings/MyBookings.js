@@ -11,7 +11,7 @@ const MyBookings = () => {
                 <section className="products pt-0">
                     <header>
                         <div class="container">
-                            <h2 class=" h2 title">MY BOOKINGS</h2>
+                            <h2 class=" h2 title">Booking History</h2>
                         </div>
                     </header>
                     <div className="container">
