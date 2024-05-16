@@ -14,6 +14,7 @@ Welcome to my GitHub profile! I'm a passionate software developer with a love fo
 Here are some of my notable projects:
 
 - [**Project 1**](https://github.com/Yugendarreddyabbu/Yugendarreddyabbu): A web application built with React.
+- [**Project 2**](https://github.com/Yugendarreddyabbu/Admin-Management-Portal)): A web application built with React.
 
 
 ## GitHub Stats
